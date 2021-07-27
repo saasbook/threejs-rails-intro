@@ -3,7 +3,7 @@ class ShapesController < ApplicationController
 
   # GET /shapes or /shapes.json
   def index
-    @shapes = Shape.all
+    #@shapes = Shape.all
   end
 
   # GET /shapes/1 or /shapes/1.json

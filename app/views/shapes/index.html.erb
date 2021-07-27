@@ -1,27 +1,15 @@
-<p id="notice"><%= notice %></p>
+<!DOCTYPE html>
 
-<h1>Shapes</h1>
+<html>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<head>
+  <script src="https://threejs.org/build/three.js"></script>
+</head>
 
-  <tbody>
-    <% @shapes.each do |shape| %>
-      <tr>
-        <td><%= shape.name %></td>
-        <td><%= link_to 'Show', shape %></td>
-        <td><%= link_to 'Edit', edit_shape_path(shape) %></td>
-        <td><%= link_to 'Destroy', shape, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<body>
 
-<br>
-
-<%= link_to 'New Shape', new_shape_path %>
+<h1>Hello world</h1>
+<canvas id="cube_canvas"></canvas>
+</body>
+<%= javascript_pack_tag 'cube' %>
+</html>
